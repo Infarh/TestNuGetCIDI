@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <Authors>Infarh</Authors>  
+    <Company>MAI</Company> 
+    <Product>Test NuGet Lib</Product>   
+    <Description>Test NuGET Lib</Description>
+    <PackageLicense>MIT</PackageLicense>    
+  </PropertyGroup>
+
+</Project>
