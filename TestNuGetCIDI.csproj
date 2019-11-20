@@ -10,7 +10,8 @@
     <Company>MAI</Company> 
     <Product>Test NuGet Lib</Product>   
     <Description>Test NuGET Lib</Description>
-    <PackageLicense>MIT</PackageLicense>    
+    <PackageLicense>MIT</PackageLicense> 
+     <PackageProjectUrl>https://github.com/Infarh/TestNuGetCiDi</PackageProjectUrl>   
   </PropertyGroup>
 
 </Project>
