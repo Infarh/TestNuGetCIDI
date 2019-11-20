@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.0.1</Version>
+    <Version>0.0.1.1</Version>
     <Authors>Infarh</Authors>  
     <Company>MAI</Company> 
     <Product>Test NuGet Lib</Product>   
