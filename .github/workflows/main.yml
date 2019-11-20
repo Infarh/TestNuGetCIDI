@@ -1,0 +1,32 @@
+name: Test NuGet package creation
+
+on:
+  push:
+    branches: 
+      - master
+      
+
+jobs:
+  build:
+
+    runs-on: [windows-latest]
+    name: Update package
+    
+    steps:
+      
+      - name: Checkout repository
+        uses: actions/checkout@master
+        
+      - name: Build
+        run: |
+          dotnet pack -c Release -o out
+          
+      - name: Install NuGet
+        uses: NuGet/setup-nuget@v1.0.1
+        
+      - name: Add rigistry
+        run: nuget sources add -name "TestPackage" -Source https://nuget.pkg.github.com/Infarh/index.json -UserName Infarh -Password ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Push package
+        run: nuget push .\**\*.nupkg -Source "TestPackage" -SkipDuplicate
+    
